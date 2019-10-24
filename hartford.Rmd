@@ -1,0 +1,22 @@
+---
+title: "pair_markdown"
+author: "Daniel Shapiro"
+date: "10/24/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r}
+library(tidyverse)
+library(sf)
+library(fs)
+```
+
+```{r}
+download.file("https://stacks.stanford.edu/file/druid:hp256wp2687/hp256wp2687_ct_hartford_shapefiles_2019_08_13.tgz", destfile = "hartford.tgz")
+
+download.file("https://stacks.stanford.edu/file/druid:hp256wp2687/hp256wp2687_ct_hartford_2019_08_13.rds", destfile = "hartford_rds.rds")
+```
